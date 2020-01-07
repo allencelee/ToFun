@@ -75,7 +75,7 @@ class CommonButton extends PureComponent {
                     activeOpacity={this.props.disable ? 1 : 0.7}
                 >
                     <View style={[{
-                        backgroundColor: this.props.disable ? '#e1e1e1' : this.props.color ? this.props.color : '#ff7e00',
+                        backgroundColor: this.props.disable ? '#bebebe' : this.props.style.color ? this.props.style.color : gColor.mainColor,
                         borderRadius: radius,
                     }, styles.buttonStyle]}>
                         {this.props.title ? this.props.titleStyle ?

@@ -1,6 +1,7 @@
 
 import React, { PureComponent } from 'react'
-import {Image, StatusBar,View,AsyncStorage,ActivityIndicator,StyleSheet} from 'react-native';
+import {Image, StatusBar,View,ActivityIndicator,StyleSheet} from 'react-native';
+import AsyncStorage from '@react-native-community/async-storage';
 import {createAppContainer, Header, TabBarBottom,createSwitchNavigator} from 'react-navigation';
 import { createBottomTabNavigator } from 'react-navigation-tabs'
 import { createStackNavigator } from 'react-navigation-stack';
@@ -12,6 +13,7 @@ import HomeScene from './scene/Home/HomeScene'
 import MessageScene from './scene/Message/MessageScene'
 import MineScene from './scene/Mine/MineScene'
 import WebScene from './widget/WebScene'
+import AuthCodeCheck from './scene/Login/AuthCodeCheck'
 // const lightContentScenes = ['Home', 'Mine']
 const lightContentScenes = []
 
@@ -59,19 +61,19 @@ class RootScene extends PureComponent {
         return (
 
             <AppContainer
-                onNavigationStateChange={
-                    (prevState, currentState) => {
-                        const currentScene = getCurrentRouteName(currentState)
-                        const previousScene = getCurrentRouteName(prevState)
-                        if (previousScene !== currentScene) {
-                            if (lightContentScenes.indexOf(currentScene) >= 0) {
-                                StatusBar.setBarStyle('light-content')
-                            } else {
-                                StatusBar.setBarStyle('dark-content')
-                            }
-                        }
-                    }
-                }
+                // onNavigationStateChange={
+                //     (prevState, currentState) => {
+                //         const currentScene = getCurrentRouteName(currentState)
+                //         const previousScene = getCurrentRouteName(prevState)
+                //         if (previousScene !== currentScene) {
+                //             if (lightContentScenes.indexOf(currentScene) >= 0) {
+                //                 StatusBar.setBarStyle('light-content')
+                //             } else {
+                //                 StatusBar.setBarStyle('dark-content')
+                //             }
+                //         }
+                //     }
+                // }
             />
         )
     }
@@ -160,12 +162,13 @@ function configAppNavigator(isLogIn){
             Tab:  Tab ,
             Web:  WebScene ,
             TFPhoneInput: TFPhoneInput,
+            AuthCodeCheck: AuthCodeCheck,
         },
         {
             initialRouteName: isLogIn ? 'Tab' : 'TFPhoneInput',
             defaultNavigationOptions: {
-                headerBackImage: (<Image source={require('./img/back_black.png')}
-                                         style={{width: 24, height: 24, marginLeft: 16}}/>),
+                // headerBackImage: (<Image source={require('./img/back_black.png')}
+                //                          style={{width: 24, height: 24, marginLeft: 16}}/>),
                 headerTruncatedBackTitle: '',
                 headerStyle: platformContainerStyles,
                 headerBackTitle: null,

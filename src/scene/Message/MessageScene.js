@@ -1,16 +1,11 @@
 import React, {PureComponent }from 'react'
 import { View,Text} from 'react-native'
-type Props = {
-    navigation: any,
-}
-type State = {
-    discounts: Array<Object>,
-    dataList: Array<Object>,
-    refreshing: boolean,
-}
-class MessageScene extends PureComponent<Props, State>{
-    static navigationOptions = ({navigation}: any)=>({
+class MessageScene extends PureComponent{
+    static navigationOptions = ({navigation})=>({
         title:'消息',
+        headerStyle:{
+            shadowOpacity: 0,
+        },
     })
     render(){
         return (

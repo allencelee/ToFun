@@ -43,17 +43,14 @@ class CommonButton extends PureComponent {
         super(props);
         this.state = {
             highLighted: false,
-            radius: this.props.style.height / 2,
         };
     }
 
 
     render() {
-        var radius = this.props.style.length ? this.props.style[0].height / 2 : this.props.style.height / 2;
         return (
-            <View style={[this.props.style]}>
                 <TouchableHighlight
-                    style={{flex: 1, borderRadius: radius}}
+                    style={this.props.style}
                     onPressIn={() => {
                         this.setState({
                             highLighted: true,
@@ -75,15 +72,12 @@ class CommonButton extends PureComponent {
                     activeOpacity={this.props.disable ? 1 : 0.7}
                 >
                     <View style={[{
-                        backgroundColor: this.props.disable ? '#bebebe' : this.props.style.color ? this.props.style.color : gColor.mainColor,
-                        borderRadius: radius,
+                        backgroundColor: this.props.disable ? '#bebebe' : this.props.style.backgroundColor,
+                        borderRadius:this.props.style.borderRadius
                     }, styles.buttonStyle]}>
-                        {this.props.title ? this.props.titleStyle ?
-                            <Text style={this.props.titleStyle}>{this.props.title}</Text> :
-                            <Text style={styles.titleStyle}>{this.props.title}</Text> : null}
+                        {this.props.title ? <Text style={styles.titleStyle}>{this.props.title}</Text> : null}
                     </View>
                 </TouchableHighlight>
-            </View>
         );
     }
 }
@@ -101,7 +95,6 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-
     },
 });
 

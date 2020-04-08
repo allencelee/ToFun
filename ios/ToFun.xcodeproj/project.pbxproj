@@ -19,6 +19,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* ToFunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ToFunTests.m */; };
 		4A4963595EEF9D6DB67A5AFB /* libPods-ToFun.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F459D36DE82008F0E722AE /* libPods-ToFun.a */; };
 		6AD622240997A055DD5D3A04 /* libPods-ToFun-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ABE3095B41801C09A3CFC58 /* libPods-ToFun-tvOSTests.a */; };
+		9B6C37D0243C4EF7005F9D3F /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B051B6A24247FAB0002F76E /* libbz2.1.0.tbd */; };
 		A029E8428B11E1038D598A3A /* libPods-ToFunTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8500AE6CD8D5260536F0A4F /* libPods-ToFunTests.a */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00E356EE1AD99517003FC87E /* ToFunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToFunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* ToFunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToFunTests.m; sourceTree = "<group>"; };
@@ -58,6 +58,7 @@
 		3BBD028770B1D2168E2CC21D /* Pods-ToFun-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToFun-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-ToFun-tvOSTests/Pods-ToFun-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4AE824E8FA73FC63FA06EB2F /* Pods-ToFun-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToFun-tvOS.release.xcconfig"; path = "Target Support Files/Pods-ToFun-tvOS/Pods-ToFun-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		8ABE3095B41801C09A3CFC58 /* libPods-ToFun-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ToFun-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B051B6A24247FAB0002F76E /* libbz2.1.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.tbd; path = usr/lib/libbz2.1.0.tbd; sourceTree = SDKROOT; };
 		9DEEB0A4DFA1DC6E683346B5 /* Pods-ToFun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToFun.release.xcconfig"; path = "Target Support Files/Pods-ToFun/Pods-ToFun.release.xcconfig"; sourceTree = "<group>"; };
 		A0B0776587ADD02FA78A61E4 /* Pods-ToFun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToFun.debug.xcconfig"; path = "Target Support Files/Pods-ToFun/Pods-ToFun.debug.xcconfig"; sourceTree = "<group>"; };
 		AB8DA4A5DF678A50B5767AF3 /* Pods-ToFunTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToFunTests.release.xcconfig"; path = "Target Support Files/Pods-ToFunTests/Pods-ToFunTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B6C37D0243C4EF7005F9D3F /* libbz2.1.0.tbd in Frameworks */,
 				4A4963595EEF9D6DB67A5AFB /* libPods-ToFun.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,7 +127,6 @@
 		13B07FAE1A68108700A75B9A /* ToFun */ = {
 			isa = PBXGroup;
 			children = (
-				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -139,6 +140,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9B051B6A24247FAB0002F76E /* libbz2.1.0.tbd */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				D6F459D36DE82008F0E722AE /* libPods-ToFun.a */,
@@ -161,7 +163,6 @@
 				2099343960458DAFB4654E2F /* Pods-ToFunTests.debug.xcconfig */,
 				AB8DA4A5DF678A50B5767AF3 /* Pods-ToFunTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -290,7 +291,12 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = Z3KNLJSTK9;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = Z3KNLJSTK9;
+						ProvisioningStyle = Automatic;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -308,6 +314,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -371,7 +378,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		1FCEDB1A41D877DF2CD06336 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -583,6 +590,7 @@
 			baseConfigurationReference = 2099343960458DAFB4654E2F /* Pods-ToFunTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Z3KNLJSTK9;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -607,6 +615,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = Z3KNLJSTK9;
 				INFOPLIST_FILE = ToFunTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -626,8 +635,12 @@
 			baseConfigurationReference = A0B0776587ADD02FA78A61E4 /* Pods-ToFun.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = Z3KNLJSTK9;
 				INFOPLIST_FILE = ToFun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -635,8 +648,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuqu.ToFun;
 				PRODUCT_NAME = ToFun;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -646,7 +660,11 @@
 			baseConfigurationReference = 9DEEB0A4DFA1DC6E683346B5 /* Pods-ToFun.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z3KNLJSTK9;
 				INFOPLIST_FILE = ToFun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -654,8 +672,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuqu.ToFun;
 				PRODUCT_NAME = ToFun;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -797,6 +816,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -850,6 +870,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;

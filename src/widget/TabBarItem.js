@@ -2,15 +2,8 @@
 import React, { PureComponent } from 'react'
 import { Image } from 'react-native'
 
-type Props = {
-    tintColor: any,
-    normalImage: any,
-    selectedImage: any,
-    focused: boolean,
-}
 
-
-class TabBarItem extends PureComponent<Props> {
+class TabBarItem extends PureComponent {
     render() {
         let selectedImage = this.props.selectedImage ? this.props.selectedImage : this.props.normalImage
         return (

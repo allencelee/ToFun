@@ -1,4 +1,5 @@
 import {Dimensions, Platform, StatusBar, PixelRatio, StyleSheet, NativeModules, Alert} from 'react-native';
+
 // import api from '../api';
 // import BrConfigFactory from '../BrConfigFactory';
 // import {POST} from '../util/Http';
@@ -32,14 +33,24 @@ global.Log = Log;
 // global.POST = POST;
 // global.getDynamicData = getDynamicData;
 
-// const showLoading = ()=>{
-//     global.loadingRef && global.loadingRef.show();
-// };
-// global.showLoading=showLoading;
-// const hideLoading = ()=>{
-//     global.loadingRef && global.loadingRef.hide();
-// };
-// global.hideLoading=hideLoading;
+const showLoading = ()=>{
+    if (this.loading) {
+        this.loading.show();
+    }
+};
+global.showLoading=showLoading;
+const hideLoading = ()=>{
+    this.loading && this.loading.hide();
+};
+global.hideLoading=hideLoading;
+
+
+const showToast = (text)=>{
+    if (this.toast){
+        this.toast.show(text);
+    }
+};
+global.showToast=showToast;
 
 
 //===========================Styles===========================//
@@ -66,7 +77,7 @@ global.gStyles = StyleSheet.create({
 });
 
 global.gColor = {
-    mainColor: '#06C1AE',
+    mainColor: '#9ACD32',
     border: '#e0e0e0',
     paper: '#f3f3f3',
     gray: '#afafaf',
@@ -76,8 +87,8 @@ global.gColor = {
 };
 
 global.gScreen = {
-    screen_width: width,
-    screen_height: height,
+    width: width,
+    height: height,
     statusBarHeight: statusBarHeight,
     onePixelRatio: 1 / PixelRatio.get(),
 };
@@ -124,9 +135,9 @@ const platformContainerStyle = () => {
 global.platformContainerStyle = platformContainerStyle;
 
 //===========================调试===========================//
-const gAlert = (params) => {
+const dAlert = (params) => {
     return alert(JSON.stringify(params));
 
 };
-global.gAlert = gAlert;
+global.dAlert = dAlert;
 

@@ -4,20 +4,23 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "start": "react-native start",
+    "ios": "react-native run-ios --simulator \"iPhone 8\" --port 9000",
+    "start": "react-native start --port 9000",
     "test": "jest",
     "lint": "eslint ."
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.7.1",
+    "@react-native-community/datetimepicker": "^2.3.1",
     "@react-native-community/masked-view": "^0.1.5",
+    "moment": "^2.24.0",
     "react": "16.9.0",
     "react-native": "0.61.5",
     "react-native-gesture-handler": "^1.5.3",
     "react-native-reanimated": "^1.4.0",
     "react-native-safe-area-context": "^0.6.2",
     "react-native-screens": "^2.0.0-alpha.22",
+    "react-native-webview": "^8.0.3",
     "react-navigation": "^4.0.10",
     "react-navigation-stack": "^2.0.2",
     "react-navigation-tabs": "^2.6.2"
